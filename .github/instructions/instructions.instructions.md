@@ -16,9 +16,11 @@ Este repositorio contiene el análisis científico de datos de RCP (reanimación
 El análisis se realizará en un notebook Jupyter, donde:
 - Se explorarán y describirán los datos.
 - Se generarán visualizaciones (todas las figuras se guardarán en la carpeta `proyecto/figures`).
-- Se aplicarán análisis estadísticos rigurosos:
-  - Comparación de tasas de ROSC y supervivencia a 7 días según RCP transtelefónica.
-  - Ajuste por variables de confusión (edad, sexo, tiempo de llegada) mediante modelos multivariantes (regresión logística).
+- Se aplicarán análisis estadísticos rigurosos, incluyendo el estudio de factores asociados mediante:
+  - Regresión logística multivariante para ajustar por variables de confusión (edad, sexo, tiempo de llegada) y analizar predictores de ROSC y supervivencia.
+  - Pruebas de chi cuadrado para comparar proporciones (por ejemplo, ROSC vs. no ROSC según RCP transtelefónica o sexo).
+  - Pruebas t de Student para comparar medias (edad, tiempo de llegada, según ROSC).
+  - Tablas de contingencia y análisis de regresión logística incluyendo ROSC como predictor.
   - Cálculo de valores p, intervalos de confianza y análisis de sensibilidad.
   - Se reportarán los resultados siguiendo estándares de inferencia estadística.
 
