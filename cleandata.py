@@ -21,6 +21,7 @@ for col in ['C0_C1', 'C1_C2', 'C2_C3']:
     df[col] = pd.to_numeric(df[col], errors='coerce')
 df['TIEMPO_LLEGADA_UNIDAD'] = df['C0_C1'].fillna(0) + df['C1_C2'].fillna(0) + df['C2_C3'].fillna(0)
 
+
 # Determinar supervivencia a 7 días
 def determina_superviviente(row):
     fallecimiento_keywords = [
@@ -39,9 +40,18 @@ def determina_superviviente(row):
     texto_completo = ' '.join(textos).lower()
     return not any(palabra in texto_completo for palabra in fallecimiento_keywords)
 
-df['SOBREVIVE_7DIAS'] = df.apply(determina_superviviente, axis=1)
+# Nueva columna: ROSC (Retorno de circulación espontánea)
 
-# Eliminar columnas originales de tiempos parciales y textos auxiliares
+# ROSC: True si CODIGO PATOLOGICO es C.0.0 o C.0.2 (ECMO)
+def determina_rosc(row):
+    cod = str(row.get('CODIGO PATOLOGICO', '')).strip().upper()
+    return cod.startswith('C.0.0') or cod.startswith('C.0.2')
+
+df['SOBREVIVE_7DIAS'] = df.apply(determina_superviviente, axis=1)
+df['ROSC'] = df.apply(determina_rosc, axis=1)
+
+
+# Eliminar columnas originales de tiempos parciales, textos auxiliares y CODIGO PATOLOGICO
 df = df.drop(['C0_C1', 'C1_C2', 'C2_C3', 'CODIGO PATOLOGICO', 'Evolución', '6 HORAS', '24 horas', '7 días'], axis=1)
 
 # Guardar todos los datos (incluyendo filas con datos faltantes)
