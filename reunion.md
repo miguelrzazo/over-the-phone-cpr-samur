@@ -1,0 +1,8 @@
+- Considerar otra columna con CPC
+- Considerar DESA externo o de la basica
+- Quitar paradas traumaticas
+- Conservar n Infomes, fechas, codigos
+- Considerar Tiempo de rcps hasta exitus, o hasta ROSC
+- Quitar duplicados
+- Ritmo desfibrilable, no desfibrilable (0/1)
+- Considerar lugares??
