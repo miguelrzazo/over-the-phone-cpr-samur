@@ -79,14 +79,23 @@ def classify_responders_and_rosc(data):
     data['legos'] = data['consulta'].str.contains(
         'lego|ciudadano|testigo|persona|alertante|demandante|llamante', case=False, na=False
     ).astype(int)
+    
+    # Si hubo RCP transtelefónica, asumir que hubo testigo lego
+    data.loc[data['rcp_transtelefonica'] == 1, 'legos'] = 1
 
     # Determine ROSC based on 'consulta' or if there is a time in 'tiempo_c3_c4'
     data['rosc'] = data['consulta'].str.contains('rosc|recuperada', case=False, na=False).astype(int)
     data.loc[data['tiempo_c3_c4'] > 0, 'rosc'] = 1
+    
+    # Si hubo RCP transtelefónica, asumir que hubo RCP de testigos (lego)
+    data.loc[data['rcp_transtelefonica'] == 1, 'rcp_testigos'] = 1
 
     def classify_responder(row):
         if row['rcp_testigos'] == 0:
             return ''
+        # Si hubo RCP transtelefónica, el respondiente es lego (por defecto)
+        if row['rcp_transtelefonica'] == 1:
+            return 'lego'
         # Prioridad de clasificación: sanitario > bombero > policia > lego
         if row['sanitario'] == 1:
             return 'sanitario'

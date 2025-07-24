@@ -1,0 +1,4 @@
+Outcome,Sin RCP Trans (n/total),Sin RCP Trans (%),Con RCP Trans (n/total),Con RCP Trans (%),OR (IC 95%),p-valor
+ROSC,203/560,36.2%,33/62,53.2%,2.001 (1.181-3.392),0.0133
+Supervivencia 7 días,106/560,18.9%,20/62,32.3%,2.040 (1.150-3.617),0.0208
+Buen resultado neurológico (CPC 1-2),46/560,8.2%,7/62,11.3%,1.422 (0.612-3.302),0.5596
