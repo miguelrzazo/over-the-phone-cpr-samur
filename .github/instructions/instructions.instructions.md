@@ -31,6 +31,7 @@ El análisis se realizará en un notebook Jupyter, donde:
 ## Flujo de trabajo
 1. Análisis exploratorio y visualización en Jupyter Notebook.
 2. Guardado de todas las figuras en `proyecto/figures` para su uso posterior.
+3. Guardado de las tablas de resultados en `proyecto/tables`.
 3. Redacción del paper científico en LaTeX (carpeta `proyecto/paper`).
 4. Preparación de un póster científico (`proyecto/poster`).
 

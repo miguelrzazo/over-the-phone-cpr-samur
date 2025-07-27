@@ -4,6 +4,27 @@
 		{
 			"label": "Build LaTeX Paper",
 			"type": "shell",
+			"command": "xelatex",
+			"args": [
+				"-interaction=nonstopmode",
+				"-synctex=1",
+				"rcp_transtelefonica_paper.tex"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${workspaceFolder}/proyecto/paper"
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			}
+		},
+		{
+			"label": "Build LaTeX Paper (pdfLaTeX fallback)",
+			"type": "shell",
 			"command": "pdflatex",
 			"args": [
 				"-interaction=nonstopmode",
@@ -22,5 +43,22 @@
 				"panel": "shared"
 			}
 		}
-	]
+	,
+	{
+	  "label": "Run Data Cleaning Script",
+	  "type": "shell",
+	  "command": "${workspaceFolder}/venv/bin/python",
+	  "args": [
+		"${workspaceFolder}/data/2.Data_cleaning/cleandata.py"
+	  ],
+	  "group": "build",
+	  "problemMatcher": [],
+	  "presentation": {
+		"echo": true,
+		"reveal": "always",
+		"focus": false,
+		"panel": "shared"
+	  }
+	}
+  ]
 }

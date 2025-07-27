@@ -5,6 +5,11 @@ __pycache__/
 *.pyd
 .env
 .venv
+venv/
+
+# Debug files
+debug_case.py
+verificar_merge.py
 
 # Jupyter
 .ipynb_checkpoints/
@@ -13,3 +18,5 @@ __pycache__/
 /data/
 
 *.xlsx
+Tasks.md
+reunion 24.7.25.md
