@@ -1,3 +1,0 @@
-Tiempo_Llegada,ROSC_Sin_RCP,ROSC_Con_RCP,ROSC_OR,ROSC_IC95,ROSC_p,Superv_Sin_RCP,Superv_Con_RCP,Superv_OR,Superv_IC95,Superv_p
-Rápido (≤mediana),96/287 (33.4%),14/25 (56.0%),2.532,(1.108-5.789),0.0408,51/287 (17.8%),9/25 (36.0%),2.603,(1.089-6.219),0.0507
-Lento (>mediana),107/273 (39.2%),19/37 (51.4%),1.638,(0.822-3.261),0.2170,55/273 (20.1%),11/37 (29.7%),1.677,(0.781-3.602),0.2617

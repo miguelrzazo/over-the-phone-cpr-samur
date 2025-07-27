@@ -14,9 +14,25 @@ verificar_merge.py
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-/data/
+# System files
+.DS_Store
+*/.DS_Store
 
+# Data files (but allow scripts)
+# Raw data
+data/1.raw_imported/*.csv
+data/1.raw_imported/*.xlsx
+data/1.raw_imported/*.xls
+
+# Cleaned data and reports
+data/2.Data_cleaning/*.csv
+data/2.Data_cleaning/*reporte*.txt
+data/3.cleaned_data/*.csv
+
+# Allow Python scripts in data cleaning
+!data/2.Data_cleaning/*.py
+
+# Documentation files to ignore
 *.xlsx
 Tasks.md
 reunion 24.7.25.md
