@@ -133,9 +133,63 @@ plt.show()
 
 1. **Análisis** → `final_noteboooks/`
 2. **Aplicar diseño** → Usar especificaciones de `1. design_language.ipynb`
-3. **Exportar resultados** → `latex/figures/` y `latex/tables/`
+
+3. **Exportar resultados**:
+   - Cuaderno 2 (`2.descriptive_statistics.ipynb`): exporta tablas y figuras descriptivas a `final_noteboooks/outputs_descriptivos/`.
+   - Cuaderno 3 (`3.exploratory_analysis.ipynb`): exporta tablas y figuras inferenciales a `final_noteboooks/outputs_inferencia/`.
+   - Solo el cuaderno 4 (`4.draft_paper.ipynb`) puede exportar directamente a `latex/figures/` y `latex/tables/`.
 4. **Integrar en paper** → `latex/paper/rcp_transtelefonica_paper.tex`
 5. **Compilar** → Usar las tareas de VS Code disponibles
+
+## Especificación de Cuadernos de Análisis
+
+### Cuaderno 2: Estadística Descriptiva (`2.descriptive_statistics.ipynb`)
+- Dedicado exclusivamente a la estadística descriptiva de la muestra.
+- Genera tablas y gráficos descriptivos (distribución de variables, frecuencias, medidas de tendencia central, etc.).
+- Todos los outputs descriptivos se exportan a `final_noteboooks/outputs_descriptivos/` para su posterior uso en LaTeX.
+
+### Cuaderno 3: Inferencia Estadística (`3.exploratory_analysis.ipynb`)
+
+Este cuaderno documenta y ejecuta toda la inferencia estadística que se reportará en el paper, generando las tablas y figuras necesarias para LaTeX.
+
+**Grupos de estudio:**
+1. Sin RCP previa
+2. RCP por testigos legos
+3. RCP por primeros respondientes: sanitario, policía, bomberos. (Añadir nota que sanitarios incluye SVB SAMUR, personal hospitalario, SUMMA, etc.)
+4. RCP transtelefónica
+
+**Estratificaciones:**
+- Por edad: ≤65 años vs >65 años
+- Por tiempo de llegada: menor vs mayor que la media
+- Por tiempo de RCP (excluyendo valores 0): menor vs mayor que la media
+
+**Hipótesis principales:**
+1. La RCP transtelefónica mejora los outcomes comparado con sin RCP o RCP por legos.
+2. El beneficio es mayor cuanto más tarda la unidad en llegar.
+3. El beneficio es mayor cuanto mayor es el tiempo de RCP.
+
+**Variables outcome a evaluar:**
+- ROSC (retorno circulación espontánea)
+- Supervivencia
+- CPC favorable (CPC 1-2)
+
+**Pruebas estadísticas:**
+a) Supervivencia (dicotómica):
+   - Test χ² (Chi-cuadrado) para comparar proporciones entre grupos.
+   - Si alguna celda tiene <5 observaciones, usar test exacto de Fisher.
+b) CPC (ordinal/categórica):
+   - Comparar "Buen CPC" (1-2) vs "Malo" (3-5) con χ².
+   - Para comparar medianas/distribuciones completas, usar Mann-Whitney U.
+c) ROSC: igual que supervivencia.
+d) Regresión logística:
+   - Estimar asociación entre tipo de RCP y outcomes (supervivencia, CPC), ajustando por edad, sexo, etc.
+   - Aplicar scikit-learn para modelos multivariados y machine learning si procede.
+
+**Outputs requeridos:**
+- Tablas resumen de resultados de cada análisis (proporciones, OR, IC95%, p-valores).
+- Gráficos inferenciales: forest plots, gráficos de barras con IC, etc.
+- Apartado resumen de resultados estadísticamente significativos para discusión.
+- Todos los outputs se exportan a `final_noteboooks/outputs_inferencia/` para su posterior uso en LaTeX.
 
 ## Documentación del Proyecto
 
@@ -190,12 +244,11 @@ documentation/
 ### ⚠️ RESTRICCIONES IMPORTANTES
 
 
-
 #### Para Notebooks Finales (`final_noteboooks/`)
-- **SOLO** `4.draft_paper.ipynb` pueden guardar en `latex/figures/` y `latex/tables/`
-- El resto solo generar outputs temporales, a no ser que se especifique lo contrario explicitamente.
-- Estos son los únicos autorizados para generar outputs definitivos
-- Siempre verificar que se usa el lenguaje de diseño correcto al escribir las graficas.
+
+- **SOLO** `4.draft_paper.ipynb` puede guardar outputs definitivos en `latex/figures/` y `latex/tables/`.
+- `2.descriptive_statistics.ipynb` y `3.exploratory_analysis.ipynb` deben guardar sus outputs definitivos en carpetas propias al mismo nivel que el notebook (`final_noteboooks/outputs_descriptivos/` y `final_noteboooks/outputs_inferencia/` respectivamente), y no directamente en `latex/figures/` o `latex/tables/`.
+- Siempre verificar que se usa el lenguaje de diseño correcto al escribir las gráficas.
 
 #### Guardado Explícito
 - Solo guardar archivos cuando se solicite explícitamente
@@ -326,7 +379,7 @@ def forest_plot_or(or_values, ci_lower, ci_upper, labels):
 
 ### Reportes Estadísticos Obligatorios
 - **Medidas de tendencia central**: Media ± DE o Mediana (IQR)
-- **Tests de hipótesis**: Chi-cuadrado, t-Student, Mann-Whitney
+- **Tests de hipótesis**: Chi-cuadrado, t-Student, Mann-Whitney, Fisher
 - **Análisis multivariado**: Regresión logística con OR ajustados
 - **Análisis de supervivencia**: Hazard ratios con IC 95%
 - **Corrección por múltiples comparaciones**: Bonferroni o FDR

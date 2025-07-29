@@ -17,7 +17,8 @@
 \usepackage{siunitx}
 \usepackage{caption}
 \usepackage{multicol}
-
+\usepackage{xcolor}
+\usepackage{colortbl}
 % Set sans-serif as the main font
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -125,6 +126,11 @@ Se incluyeron todos los casos de parada cardiaca extrahospitalaria confirmada at
 \end{itemize}
 
 Se excluyeron casos con parada cardiaca de origen traumático, ahogamiento o intoxicación, así como aquellos con datos incompletos en las variables principales del estudio.
+
+\end{multicols}
+\onecolumn
+\input{../tables/descriptive.tex}
+\begin{multicols}{2}
 
 \subsection{Variables de Estudio}
 
