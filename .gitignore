@@ -1,3 +1,6 @@
+# Informes de anomalías de limpieza de datos
+data/2.Data_cleaning/informe_anomalias.md
+data/2.Data_cleaning/informe_anomalias_anotado.md
 # Python
 __pycache__/
 *.pyc

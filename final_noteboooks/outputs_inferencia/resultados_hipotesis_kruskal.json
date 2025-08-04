@@ -1,0 +1,22 @@
+{
+    "H1": {
+        "outcome": "supervivencia_7dias",
+        "p_valor": 0.20408492323834418,
+        "conclusion": "No rechazar"
+    },
+    "H2": {
+        "outcome": "cpc_favorable",
+        "p_valor": 0.14367563799080765,
+        "conclusion": "No rechazar"
+    },
+    "H3": {
+        "outcome": null,
+        "p_valor": null,
+        "conclusion": "No evaluado"
+    },
+    "H4": {
+        "outcome": null,
+        "p_valor": null,
+        "conclusion": "No evaluado"
+    }
+}

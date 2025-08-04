@@ -30,10 +30,6 @@ applyTo: '**'
 - **Menor a la mediana** vs **Mayor a la mediana** del tiempo de llegada de la unidad
 - Justificación: El tiempo es factor crítico en outcomes de RCP
 
-#### 3. **Análisis Combinado**
-- **Edad × Tipo de RCP** (6 grupos: 2 edades × 3 tipos RCP)
-- **Tiempo × Tipo de RCP** (6 grupos: 2 tiempos × 3 tipos RCP)
-- **Edad × Tiempo × Tipo de RCP** (análisis multivariado)
 
 ### Hipótesis de Investigación
 - **H1**: La RCP transtelefónica mejora la supervivencia comparada con sin RCP previa
@@ -164,9 +160,14 @@ Este cuaderno documenta y ejecuta toda la inferencia estadística que se reporta
 - Por tiempo de RCP (excluyendo valores 0): menor vs mayor que la media
 
 **Hipótesis principales:**
-1. La RCP transtelefónica mejora los outcomes comparado con sin RCP o RCP por legos.
+1. La RCP transtelefónica mejora los outcomes comparado con RCP por legos.
 2. El beneficio es mayor cuanto más tarda la unidad en llegar.
 3. El beneficio es mayor cuanto mayor es el tiempo de RCP.
+
+**Hipótesis alternativa/nula:**
+La RCP transtelefónica no mejora los outcomes comparado con RCP por legos.
+El tiempo de llegada no afecta a la efectividad de la RCP transtelefónica.
+El tiempo de RCP no afecta a la efectividad de la RCP transtelefónica.
 
 **Variables outcome a evaluar:**
 - ROSC (retorno circulación espontánea)
@@ -263,6 +264,12 @@ documentation/
 - **Audiencia**: Comunidad médica especializada en emergencias y RCP
 
 ### Estructura del Paper Científico
+* Todas las abreviaciones deben ser definidas en su primera aparición. Despues de la primera vez, se pueden usar las abreviaciones sin definirlas de nuevo.
+* El paper debe seguir la estructura IMRaD (Introducción, Métodos, Resultados y Discusión) con secciones adicionales según sea necesario.
+* Las secciones deben ser claras y concisas, con un enfoque en la reproducibilidad y transparencia del análisis.
+* Las tablas y figuras deben ser autoexplicativas y acompañadas de leyendas detalladas.
+* 
+* Se citara en IEEE
 
 #### 1. **Abstract/Resumen**
 - Máximo 350 palabras
@@ -377,15 +384,10 @@ def forest_plot_or(or_values, ci_lower, ci_upper, labels):
 - **Leyendas explicativas** completas
 - **Títulos informativos** que resuman el hallazgo principal
 
-### Reportes Estadísticos Obligatorios
+### Reportes Estadísticos
 - **Medidas de tendencia central**: Media ± DE o Mediana (IQR)
 - **Tests de hipótesis**: Chi-cuadrado, t-Student, Mann-Whitney, Fisher
 - **Análisis multivariado**: Regresión logística con OR ajustados
 - **Análisis de supervivencia**: Hazard ratios con IC 95%
 - **Corrección por múltiples comparaciones**: Bonferroni o FDR
 
-## Compilación LaTeX
-
-Usar las tareas predefinidas en VS Code:
-- "Build LaTeX Paper" (XeLaTeX)
-- "Build LaTeX Paper (pdfLaTeX fallback)"

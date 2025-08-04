@@ -1,0 +1,44 @@
+{
+    "rosc": {
+        "RCP transtelefonica": {
+            "odds_ratio": 1.246242774566474,
+            "p_valor": 0.49527566100275905
+        },
+        "Primer respondiente": {
+            "odds_ratio": 1.184445612191277,
+            "p_valor": 0.4824840479600611
+        },
+        "RCP lego": {
+            "odds_ratio": 1.2273603082851638,
+            "p_valor": 0.5474443800143366
+        }
+    },
+    "supervivencia_7dias": {
+        "RCP transtelefonica": {
+            "odds_ratio": 1.1418439716312057,
+            "p_valor": 0.6883976243839007
+        },
+        "Primer respondiente": {
+            "odds_ratio": 1.0540098199672667,
+            "p_valor": 0.8614950443920507
+        },
+        "RCP lego": {
+            "odds_ratio": 0.5957446808510638,
+            "p_valor": 0.48844850771566933
+        }
+    },
+    "cpc_favorable": {
+        "RCP transtelefonica": {
+            "odds_ratio": 1.2976190476190477,
+            "p_valor": 0.5263476127157383
+        },
+        "Primer respondiente": {
+            "odds_ratio": 1.1978021978021978,
+            "p_valor": 0.5871740603065747
+        },
+        "RCP lego": {
+            "odds_ratio": 0.6770186335403726,
+            "p_valor": 0.63149233324125
+        }
+    }
+}
