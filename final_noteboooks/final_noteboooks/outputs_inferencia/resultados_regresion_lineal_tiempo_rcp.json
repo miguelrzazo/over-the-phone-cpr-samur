@@ -1,0 +1,82 @@
+{
+  "metodo": "regresion_lineal",
+  "unidad_tiempo": "minutos",
+  "prob_por_intervalo": {
+    "RCP Transtelefónica": [
+      0.3333333333333333,
+      0.6,
+      0.5454545454545454,
+      0.17391304347826086,
+      0.16216216216216217,
+      0.0
+    ],
+    "Sin RCP previa": [
+      0.6,
+      0.625,
+      0.08333333333333333,
+      0.0967741935483871,
+      0.08433734939759036,
+      0.25
+    ],
+    "RCP por primeros respondientes": [
+      1.0,
+      0.75,
+      0.631578947368421,
+      0.2222222222222222,
+      0.09375,
+      0.0
+    ],
+    "RCP por testigos legos": [
+      NaN,
+      0.6,
+      0.6666666666666666,
+      0.2,
+      0.1,
+      0.0
+    ]
+  },
+  "regresion_stats": {
+    "RCP Transtelefónica": {
+      "n_casos": 83,
+      "r_squared": 0.0670331455298967,
+      "pendiente": -0.007922684930016176,
+      "intercepto": 0.4744953345877379,
+      "tiempo_min": 3.0,
+      "tiempo_max": 60.266666666666666,
+      "cpc_favorable_rate": 0.24096385542168675
+    },
+    "Sin RCP previa": {
+      "n_casos": 143,
+      "r_squared": 0.031803985897954745,
+      "pendiente": -0.004334736595808588,
+      "intercepto": 0.2749558939311193,
+      "tiempo_min": 0.016666666666666666,
+      "tiempo_max": 67.45,
+      "cpc_favorable_rate": 0.13986013986013987
+    },
+    "RCP por primeros respondientes": {
+      "n_casos": 116,
+      "r_squared": 0.31004877716147916,
+      "pendiente": -0.016923682158732033,
+      "intercepto": 0.7814951408034658,
+      "tiempo_min": 1.0,
+      "tiempo_max": 74.71666666666667,
+      "cpc_favorable_rate": 0.29310344827586204
+    },
+    "RCP por testigos legos": {
+      "n_casos": 71,
+      "r_squared": 0.10785444235227637,
+      "pendiente": -0.01056709971479539,
+      "intercepto": 0.5453442343022799,
+      "tiempo_min": 5.0,
+      "tiempo_max": 76.66666666666667,
+      "cpc_favorable_rate": 0.23943661971830985
+    }
+  },
+  "interpretacion": {
+    "grupo_mejor_inicial": "RCP por primeros respondientes (intercepto más alto)",
+    "grupo_declive_menor": "Sin RCP previa (pendiente menos negativa)",
+    "grupo_mas_predecible": "RCP por primeros respondientes (R² más alto)",
+    "mensaje_clave": "RCP por primeros respondientes tiene mejor pronóstico inicial pero declive más pronunciado. RCP transtelefónica mantiene efectividad moderada y estable."
+  }
+}

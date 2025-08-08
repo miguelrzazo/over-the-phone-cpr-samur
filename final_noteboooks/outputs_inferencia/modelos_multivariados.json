@@ -1,0 +1,203 @@
+{
+  "ROSC_bin": {
+    "pseudo_r2": 0.09634819633376202,
+    "aic": 588.600052012793,
+    "n_obs": 471,
+    "n_eventos": 283,
+    "variables": [
+      "edad_std",
+      "tiempo_llegada_std",
+      "tiempo_rcp_std",
+      "sexo_masculino",
+      "RCP Transtelef\u00f3nica",
+      "RCP por primeros respondientes",
+      "RCP por testigos legos"
+    ],
+    "resultados": {
+      "Coeficiente": {
+        "const": 0.39113801757220723,
+        "edad_std": -0.5744282741406816,
+        "tiempo_llegada_std": -0.1226152977235081,
+        "tiempo_rcp_std": -0.5905259903715011,
+        "sexo_masculino": -0.16889952988323406,
+        "RCP Transtelef\u00f3nica": 0.16651865076011746,
+        "RCP por primeros respondientes": 0.318907871028178,
+        "RCP por testigos legos": 0.6055752285093774
+      },
+      "OR": {
+        "const": 1.4786625807498928,
+        "edad_std": 0.5630266737149451,
+        "tiempo_llegada_std": 0.8846039062468911,
+        "tiempo_rcp_std": 0.554035790588354,
+        "sexo_masculino": 0.8445937555566497,
+        "RCP Transtelef\u00f3nica": 1.1811855656735764,
+        "RCP por primeros respondientes": 1.3756245841893286,
+        "RCP por testigos legos": 1.8323059003918274
+      },
+      "IC_95_inf": {
+        "const": 0.8735870199447522,
+        "edad_std": 0.45207540566003734,
+        "tiempo_llegada_std": 0.7204042703178419,
+        "tiempo_rcp_std": 0.43828789036588045,
+        "sexo_masculino": 0.5130656056498759,
+        "RCP Transtelef\u00f3nica": 0.696228565135662,
+        "RCP por primeros respondientes": 0.8365912895159441,
+        "RCP por testigos legos": 0.9736625180078878
+      },
+      "IC_95_sup": {
+        "const": 2.5028336934862074,
+        "edad_std": 0.7012083191114798,
+        "tiempo_llegada_std": 1.0862290844028581,
+        "tiempo_rcp_std": 0.7003516729531757,
+        "sexo_masculino": 1.3903458038699237,
+        "RCP Transtelef\u00f3nica": 2.003938663854949,
+        "RCP por primeros respondientes": 2.2619683235298598,
+        "RCP por testigos legos": 3.4481607851967313
+      },
+      "p_valor": {
+        "const": 0.145211663648249,
+        "edad_std": 2.901876536665492e-07,
+        "tiempo_llegada_std": 0.24182763261538032,
+        "tiempo_rcp_std": 7.862964282415784e-07,
+        "sexo_masculino": 0.5066070443888813,
+        "RCP Transtelef\u00f3nica": 0.5369516680682722,
+        "RCP por primeros respondientes": 0.2088211603142286,
+        "RCP por testigos legos": 0.06048714187797579
+      }
+    }
+  },
+  "supervivencia_bin": {
+    "pseudo_r2": 0.13826236142188353,
+    "aic": 483.93654916267485,
+    "n_obs": 471,
+    "n_eventos": 124,
+    "variables": [
+      "edad_std",
+      "tiempo_llegada_std",
+      "tiempo_rcp_std",
+      "sexo_masculino",
+      "RCP Transtelef\u00f3nica",
+      "RCP por primeros respondientes",
+      "RCP por testigos legos"
+    ],
+    "resultados": {
+      "Coeficiente": {
+        "const": -1.9726594702855444,
+        "edad_std": -0.4781245581816297,
+        "tiempo_llegada_std": -0.15561344130830831,
+        "tiempo_rcp_std": -0.8593349650340666,
+        "sexo_masculino": 0.3024368802489978,
+        "RCP Transtelef\u00f3nica": 0.8061677546439092,
+        "RCP por primeros respondientes": 0.78025016120206,
+        "RCP por testigos legos": 0.5959141419555953
+      },
+      "OR": {
+        "const": 0.13908646758691337,
+        "edad_std": 0.6199449729541099,
+        "tiempo_llegada_std": 0.8558899781426381,
+        "tiempo_rcp_std": 0.4234435934957603,
+        "sexo_masculino": 1.3531522630916522,
+        "RCP Transtelef\u00f3nica": 2.239309937173902,
+        "RCP por primeros respondientes": 2.182018053487042,
+        "RCP por testigos legos": 1.8146890703792755
+      },
+      "IC_95_inf": {
+        "const": 0.07201046693709709,
+        "edad_std": 0.4930803749874239,
+        "tiempo_llegada_std": 0.6530420915649944,
+        "tiempo_rcp_std": 0.3224247290980994,
+        "sexo_masculino": 0.7582115159958835,
+        "RCP Transtelef\u00f3nica": 1.1942813538201267,
+        "RCP por primeros respondientes": 1.2035098791590801,
+        "RCP por testigos legos": 0.8968431519471072
+      },
+      "IC_95_sup": {
+        "const": 0.2686421334096315,
+        "edad_std": 0.7794505500261991,
+        "tiempo_llegada_std": 1.1217464603690073,
+        "tiempo_rcp_std": 0.5561126696893289,
+        "sexo_masculino": 2.4149211776414123,
+        "RCP Transtelef\u00f3nica": 4.198766880757169,
+        "RCP por primeros respondientes": 3.9560978004352916,
+        "RCP por testigos legos": 3.6718755280725106
+      },
+      "p_valor": {
+        "const": 4.270470081115079e-09,
+        "edad_std": 4.259909537292587e-05,
+        "tiempo_llegada_std": 0.2595191017506018,
+        "tiempo_rcp_std": 6.424648468900105e-10,
+        "sexo_masculino": 0.30613373332978433,
+        "RCP Transtelef\u00f3nica": 0.011953140405111494,
+        "RCP por primeros respondientes": 0.010165327068041782,
+        "RCP por testigos legos": 0.09748051895796798
+      }
+    }
+  },
+  "cpc_favorable_bin": {
+    "pseudo_r2": 0.17042516015134945,
+    "aic": 432.6972410154719,
+    "n_obs": 471,
+    "n_eventos": 106,
+    "variables": [
+      "edad_std",
+      "tiempo_llegada_std",
+      "tiempo_rcp_std",
+      "sexo_masculino",
+      "RCP Transtelef\u00f3nica",
+      "RCP por primeros respondientes",
+      "RCP por testigos legos"
+    ],
+    "resultados": {
+      "Coeficiente": {
+        "const": -2.5110103497287644,
+        "edad_std": -0.47556129195263824,
+        "tiempo_llegada_std": -0.13529770492856794,
+        "tiempo_rcp_std": -1.0014611097616628,
+        "sexo_masculino": 0.40328247857099975,
+        "RCP Transtelef\u00f3nica": 0.9002075479995845,
+        "RCP por primeros respondientes": 1.07668568760063,
+        "RCP por testigos legos": 0.852512350348631
+      },
+      "OR": {
+        "const": 0.08118617136302786,
+        "edad_std": 0.62153609533106,
+        "tiempo_llegada_std": 0.8734558408690598,
+        "tiempo_rcp_std": 0.36734232141984324,
+        "sexo_masculino": 1.4967296260000014,
+        "RCP Transtelef\u00f3nica": 2.460113649841251,
+        "RCP por primeros respondientes": 2.9349361184260894,
+        "RCP por testigos legos": 2.3455322545110446
+      },
+      "IC_95_inf": {
+        "const": 0.038611517725791376,
+        "edad_std": 0.48603569242548694,
+        "tiempo_llegada_std": 0.6564185574585304,
+        "tiempo_rcp_std": 0.2730881938348442,
+        "sexo_masculino": 0.7984680532854398,
+        "RCP Transtelef\u00f3nica": 1.223151334916431,
+        "RCP por primeros respondientes": 1.5242773240968277,
+        "RCP por testigos legos": 1.09314190442265
+      },
+      "IC_95_sup": {
+        "const": 0.1707053959234604,
+        "edad_std": 0.7948122407874488,
+        "tiempo_llegada_std": 1.1622540180797287,
+        "tiempo_rcp_std": 0.49412748025177344,
+        "sexo_masculino": 2.805622046027266,
+        "RCP Transtelef\u00f3nica": 4.948005203745897,
+        "RCP por primeros respondientes": 5.651104220385828,
+        "RCP por testigos legos": 5.032760645890093
+      },
+      "p_valor": {
+        "const": 3.541867853851025e-11,
+        "edad_std": 0.00015045796387489898,
+        "tiempo_llegada_std": 0.35324937547501545,
+        "tiempo_rcp_std": 3.591835824761642e-11,
+        "sexo_masculino": 0.2084125393000863,
+        "RCP Transtelef\u00f3nica": 0.011571593326543828,
+        "RCP por primeros respondientes": 0.001277592404888758,
+        "RCP por testigos legos": 0.028626592599153337
+      }
+    }
+  }
+}

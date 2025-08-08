@@ -1,22 +1,104 @@
 {
-    "H1": {
-        "outcome": "supervivencia_7dias",
-        "p_valor": 0.4572953312370093,
-        "conclusion": "No rechazar"
-    },
-    "H2": {
-        "outcome": "cpc_favorable",
-        "p_valor": 0.4572953312370093,
-        "conclusion": "No rechazar"
-    },
-    "H3": {
-        "outcome": null,
-        "p_valor": null,
-        "conclusion": "No evaluado"
-    },
-    "H4": {
-        "outcome": null,
-        "p_valor": null,
-        "conclusion": "No evaluado"
+  "ROSC_bin": {
+    "outcome": "ROSC",
+    "test": "Chi-cuadrado",
+    "estadistico": 5.958312965240006,
+    "p_valor": 0.11365609827295853,
+    "significativo": "False",
+    "interpretacion": "No hay diferencias estad\u00edsticamente significativas",
+    "proporciones": {
+      "sum": {
+        "RCP Transtelef\u00f3nica": 67,
+        "RCP por primeros respondientes": 91,
+        "RCP por testigos legos": 53,
+        "Sin RCP previa": 89
+      },
+      "count": {
+        "RCP Transtelef\u00f3nica": 113,
+        "RCP por primeros respondientes": 144,
+        "RCP por testigos legos": 77,
+        "Sin RCP previa": 166
+      },
+      "mean": {
+        "RCP Transtelef\u00f3nica": 0.593,
+        "RCP por primeros respondientes": 0.632,
+        "RCP por testigos legos": 0.688,
+        "Sin RCP previa": 0.536
+      },
+      "porcentaje": {
+        "RCP Transtelef\u00f3nica": 59.3,
+        "RCP por primeros respondientes": 63.2,
+        "RCP por testigos legos": 68.8,
+        "Sin RCP previa": 53.6
+      }
     }
+  },
+  "supervivencia_bin": {
+    "outcome": "Supervivencia al Alta",
+    "test": "Chi-cuadrado",
+    "estadistico": 10.751470141544491,
+    "p_valor": 0.0131485572502301,
+    "significativo": "True",
+    "interpretacion": "Diferencias estad\u00edsticamente significativas",
+    "proporciones": {
+      "sum": {
+        "RCP Transtelef\u00f3nica": 33,
+        "RCP por primeros respondientes": 46,
+        "RCP por testigos legos": 22,
+        "Sin RCP previa": 28
+      },
+      "count": {
+        "RCP Transtelef\u00f3nica": 113,
+        "RCP por primeros respondientes": 144,
+        "RCP por testigos legos": 77,
+        "Sin RCP previa": 166
+      },
+      "mean": {
+        "RCP Transtelef\u00f3nica": 0.292,
+        "RCP por primeros respondientes": 0.319,
+        "RCP por testigos legos": 0.286,
+        "Sin RCP previa": 0.169
+      },
+      "porcentaje": {
+        "RCP Transtelef\u00f3nica": 29.2,
+        "RCP por primeros respondientes": 31.9,
+        "RCP por testigos legos": 28.6,
+        "Sin RCP previa": 16.9
+      }
+    }
+  },
+  "cpc_favorable_bin": {
+    "outcome": "CPC Favorable (1-2)",
+    "test": "Chi-cuadrado",
+    "estadistico": 13.264819172173592,
+    "p_valor": 0.004097551460293953,
+    "significativo": "True",
+    "interpretacion": "Diferencias estad\u00edsticamente significativas",
+    "proporciones": {
+      "sum": {
+        "RCP Transtelef\u00f3nica": 26,
+        "RCP por primeros respondientes": 43,
+        "RCP por testigos legos": 20,
+        "Sin RCP previa": 22
+      },
+      "count": {
+        "RCP Transtelef\u00f3nica": 113,
+        "RCP por primeros respondientes": 144,
+        "RCP por testigos legos": 77,
+        "Sin RCP previa": 166
+      },
+      "mean": {
+        "RCP Transtelef\u00f3nica": 0.23,
+        "RCP por primeros respondientes": 0.299,
+        "RCP por testigos legos": 0.26,
+        "Sin RCP previa": 0.133
+      },
+      "porcentaje": {
+        "RCP Transtelef\u00f3nica": 23.0,
+        "RCP por primeros respondientes": 29.9,
+        "RCP por testigos legos": 26.0,
+        "Sin RCP previa": 13.3
+      }
+    }
+  }
 }

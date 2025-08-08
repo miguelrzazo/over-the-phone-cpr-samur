@@ -1,0 +1,17 @@
+{
+  "ROSC": {
+    "test_usado": "Chi-cuadrado",
+    "p_valor": 0.018476378931509184,
+    "significativo": true
+  },
+  "Supervivencia": {
+    "test_usado": "Chi-cuadrado",
+    "p_valor": 0.00018998050482544617,
+    "significativo": true
+  },
+  "CPC_favorable": {
+    "test_usado": "Chi-cuadrado",
+    "p_valor": 1.9065645199462126e-05,
+    "significativo": true
+  }
+}

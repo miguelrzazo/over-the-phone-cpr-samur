@@ -1,0 +1,82 @@
+{
+  "metodo": "regresion_lineal_grupos_combinados",
+  "descripcion": "RCP transtelefonica y legos combinados como RCP testigos",
+  "grupos": [
+    "Sin RCP previa",
+    "RCP por primeros respondientes",
+    "RCP testigos"
+  ],
+  "estratificacion": "ritmo_inicial_desfibrilable",
+  "regresion_stats": {
+    "No Desfibrilable": {
+      "RCP testigos": {
+        "n_casos": 82,
+        "r_squared": 0.00239998813104092,
+        "pendiente": 0.0008500676949421966,
+        "intercepto": 0.022239024588162504,
+        "tiempo_min": 4.0,
+        "tiempo_max": 76.66666666666667,
+        "cpc_favorable_rate": 0.04878048780487805
+      },
+      "Sin RCP previa": {
+        "n_casos": 100,
+        "r_squared": 0.006672274649434984,
+        "pendiente": -0.0015452140960079892,
+        "intercepto": 0.11109173147745616,
+        "tiempo_min": 5.0,
+        "tiempo_max": 64.95,
+        "cpc_favorable_rate": 0.06
+      },
+      "RCP por primeros respondientes": {
+        "n_casos": 72,
+        "r_squared": 0.05863879342167411,
+        "pendiente": -0.006707165695794954,
+        "intercepto": 0.3366147162777876,
+        "tiempo_min": 7.0,
+        "tiempo_max": 65.51666666666667,
+        "cpc_favorable_rate": 0.1111111111111111
+      }
+    },
+    "Desfibrilable": {
+      "RCP testigos": {
+        "n_casos": 72,
+        "r_squared": 0.1518314075279794,
+        "pendiente": -0.013283912800331022,
+        "intercepto": 0.8165654067883712,
+        "tiempo_min": 3.0,
+        "tiempo_max": 60.0,
+        "cpc_favorable_rate": 0.4583333333333333
+      },
+      "RCP por primeros respondientes": {
+        "n_casos": 44,
+        "r_squared": 0.34479300008697533,
+        "pendiente": -0.01716781176069202,
+        "intercepto": 0.9525451438726682,
+        "tiempo_min": 1.0,
+        "tiempo_max": 74.71666666666667,
+        "cpc_favorable_rate": 0.5909090909090909
+      },
+      "Sin RCP previa": {
+        "n_casos": 43,
+        "r_squared": 0.02304941251137449,
+        "pendiente": -0.004230843396053667,
+        "intercepto": 0.4387580960550542,
+        "tiempo_min": 0.016666666666666666,
+        "tiempo_max": 67.45,
+        "cpc_favorable_rate": 0.32558139534883723
+      }
+    }
+  },
+  "resumen_tasas": {
+    "No_Desfibrilable": {
+      "RCP testigos": 0.049,
+      "Sin RCP previa": 0.06,
+      "RCP por primeros respondientes": 0.111
+    },
+    "Desfibrilable": {
+      "RCP testigos": 0.458,
+      "Sin RCP previa": 0.326,
+      "RCP por primeros respondientes": 0.591
+    }
+  }
+}

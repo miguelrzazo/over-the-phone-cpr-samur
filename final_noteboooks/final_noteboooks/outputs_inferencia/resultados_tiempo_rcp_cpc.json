@@ -1,0 +1,72 @@
+{
+  "prob_por_intervalo": {
+    "RCP Transtelefónica": [
+      0.3333333333333333,
+      0.6,
+      0.5454545454545454,
+      0.17391304347826086,
+      0.14634146341463414
+    ],
+    "Sin RCP previa": [
+      0.6,
+      0.625,
+      0.08333333333333333,
+      0.0967741935483871,
+      0.09195402298850575
+    ],
+    "RCP por primeros respondientes": [
+      1.0,
+      0.75,
+      0.631578947368421,
+      0.2222222222222222,
+      0.09090909090909091
+    ],
+    "RCP por testigos legos": [
+      NaN,
+      0.6,
+      0.6666666666666666,
+      0.2,
+      0.09375
+    ]
+  },
+  "regresion_stats": {
+    "RCP Transtelefónica": {
+      "n_casos": 83,
+      "score": 0.7590361445783133,
+      "coeficiente": -0.6131286919396995,
+      "tiempo_min": 180.0,
+      "tiempo_max": 3616.0,
+      "cpc_favorable_rate": 0.24096385542168675
+    },
+    "Sin RCP previa": {
+      "n_casos": 143,
+      "score": 0.8601398601398601,
+      "coeficiente": -0.5016665079678415,
+      "tiempo_min": 1.0,
+      "tiempo_max": 4047.0,
+      "cpc_favorable_rate": 0.13986013986013987
+    },
+    "RCP por primeros respondientes": {
+      "n_casos": 116,
+      "score": 0.8362068965517241,
+      "coeficiente": -1.548265375791154,
+      "tiempo_min": 60.0,
+      "tiempo_max": 4483.0,
+      "cpc_favorable_rate": 0.29310344827586204
+    },
+    "RCP por testigos legos": {
+      "n_casos": 71,
+      "score": 0.7746478873239436,
+      "coeficiente": -0.9008034062349335,
+      "tiempo_min": 300.0,
+      "tiempo_max": 4600.0,
+      "cpc_favorable_rate": 0.23943661971830985
+    }
+  },
+  "interpretacion": {
+    "grupo_mejor_inicial": "RCP por primeros respondientes",
+    "grupo_declive_menor": "RCP transtelefónica",
+    "grupo_mas_predecible": "Sin RCP previa",
+    "mensaje_clave": "El tiempo es crítico para todos los tipos de RCP, pero RCP transtelefónica mantiene mejor estabilidad"
+  }
+}
