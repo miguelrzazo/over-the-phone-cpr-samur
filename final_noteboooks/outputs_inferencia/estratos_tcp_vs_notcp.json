@@ -1,0 +1,344 @@
+{
+  "edad_cat": {
+    "<=65": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 12,
+            "Sin telefónica": 26
+          },
+          "Sí": {
+            "RCP telefónica": 36,
+            "Sin telefónica": 85
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.9176470588235294,
+        "LCL95": 0.41760798039538366,
+        "UCL95": 2.0164272813230526,
+        "p_fisher": 0.8414181475500202,
+        "n_TCPR": 48,
+        "n_NoT": 111
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 27,
+            "Sin telefónica": 66
+          },
+          "Sí": {
+            "RCP telefónica": 21,
+            "Sin telefónica": 45
+          }
+        },
+        "OR_TCPR_vs_NoT": 1.1407407407407408,
+        "LCL95": 0.5752190167363589,
+        "UCL95": 2.262250377202248,
+        "p_fisher": 0.7285778876171705,
+        "n_TCPR": 48,
+        "n_NoT": 111
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 31,
+            "Sin telefónica": 69
+          },
+          "Sí": {
+            "RCP telefónica": 17,
+            "Sin telefónica": 42
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.9009216589861752,
+        "LCL95": 0.4451480397992393,
+        "UCL95": 1.8233481068375785,
+        "p_fisher": 0.8587445048873944,
+        "n_TCPR": 48,
+        "n_NoT": 111
+      }
+    },
+    ">65": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 32,
+            "Sin telefónica": 51
+          },
+          "Sí": {
+            "RCP telefónica": 31,
+            "Sin telefónica": 59
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.8373940677966102,
+        "LCL95": 0.4504678715725449,
+        "UCL95": 1.5566677870566523,
+        "p_fisher": 0.6362162158574363,
+        "n_TCPR": 63,
+        "n_NoT": 110
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 53,
+            "Sin telefónica": 87
+          },
+          "Sí": {
+            "RCP telefónica": 12,
+            "Sin telefónica": 23
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.8564397046759639,
+        "LCL95": 0.39375899250768076,
+        "UCL95": 1.8627865818991918,
+        "p_fisher": 0.845242391908388,
+        "n_TCPR": 65,
+        "n_NoT": 110
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 56,
+            "Sin telefónica": 89
+          },
+          "Sí": {
+            "RCP telefónica": 9,
+            "Sin telefónica": 21
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.6811224489795918,
+        "LCL95": 0.29128609201429057,
+        "UCL95": 1.5926877500254844,
+        "p_fisher": 0.41372618569554825,
+        "n_TCPR": 65,
+        "n_NoT": 110
+      }
+    }
+  },
+  "llegada_cat": {
+    "≤471s": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 20,
+            "Sin telefónica": 43
+          },
+          "Sí": {
+            "RCP telefónica": 27,
+            "Sin telefónica": 71
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.8176056338028169,
+        "LCL95": 0.40958460787002515,
+        "UCL95": 1.6320900726773322,
+        "p_fisher": 0.5972756207018712,
+        "n_TCPR": 47,
+        "n_NoT": 114
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 32,
+            "Sin telefónica": 81
+          },
+          "Sí": {
+            "RCP telefónica": 16,
+            "Sin telefónica": 33
+          }
+        },
+        "OR_TCPR_vs_NoT": 1.2272727272727273,
+        "LCL95": 0.5950697658560993,
+        "UCL95": 2.5311290096221577,
+        "p_fisher": 0.5797090517442707,
+        "n_TCPR": 48,
+        "n_NoT": 114
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 35,
+            "Sin telefónica": 84
+          },
+          "Sí": {
+            "RCP telefónica": 13,
+            "Sin telefónica": 30
+          }
+        },
+        "OR_TCPR_vs_NoT": 1.04,
+        "LCL95": 0.4859082298314711,
+        "UCL95": 2.225934720996873,
+        "p_fisher": 1.0,
+        "n_TCPR": 48,
+        "n_NoT": 114
+      }
+    },
+    ">471s": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 24,
+            "Sin telefónica": 34
+          },
+          "Sí": {
+            "RCP telefónica": 40,
+            "Sin telefónica": 73
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.776255707762557,
+        "LCL95": 0.40548448140755566,
+        "UCL95": 1.4860566839506184,
+        "p_fisher": 0.5053101842411036,
+        "n_TCPR": 64,
+        "n_NoT": 107
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 48,
+            "Sin telefónica": 72
+          },
+          "Sí": {
+            "RCP telefónica": 17,
+            "Sin telefónica": 35
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.7285714285714285,
+        "LCL95": 0.3672924524304553,
+        "UCL95": 1.4452143598870146,
+        "p_fisher": 0.39617704461626624,
+        "n_TCPR": 65,
+        "n_NoT": 107
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 52,
+            "Sin telefónica": 74
+          },
+          "Sí": {
+            "RCP telefónica": 13,
+            "Sin telefónica": 33
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.5606060606060606,
+        "LCL95": 0.2692744606606739,
+        "UCL95": 1.1671331711784017,
+        "p_fisher": 0.1552143933159085,
+        "n_TCPR": 65,
+        "n_NoT": 107
+      }
+    }
+  },
+  "ritmo_cat": {
+    "Desfibrilable": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 8,
+            "Sin telefónica": 10
+          },
+          "Sí": {
+            "RCP telefónica": 39,
+            "Sin telefónica": 85
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.5735294117647058,
+        "LCL95": 0.21014302586216096,
+        "UCL95": 1.5652957542113641,
+        "p_fisher": 0.29240497769068435,
+        "n_TCPR": 47,
+        "n_NoT": 95
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 20,
+            "Sin telefónica": 46
+          },
+          "Sí": {
+            "RCP telefónica": 27,
+            "Sin telefónica": 49
+          }
+        },
+        "OR_TCPR_vs_NoT": 1.2673469387755103,
+        "LCL95": 0.6265405034970875,
+        "UCL95": 2.5635505673754473,
+        "p_fisher": 0.592629295070445,
+        "n_TCPR": 47,
+        "n_NoT": 95
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 24,
+            "Sin telefónica": 47
+          },
+          "Sí": {
+            "RCP telefónica": 23,
+            "Sin telefónica": 48
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.9383680555555556,
+        "LCL95": 0.4663588495103843,
+        "UCL95": 1.8881052833275498,
+        "p_fisher": 1.0,
+        "n_TCPR": 47,
+        "n_NoT": 95
+      }
+    },
+    "No desfibrilable": {
+      "ROSC": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 36,
+            "Sin telefónica": 66
+          },
+          "Sí": {
+            "RCP telefónica": 25,
+            "Sin telefónica": 56
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.8184523809523809,
+        "LCL95": 0.4392972884474766,
+        "UCL95": 1.5248541648276344,
+        "p_fisher": 0.6360062122728009,
+        "n_TCPR": 61,
+        "n_NoT": 122
+      },
+      "Supervivencia": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 58,
+            "Sin telefónica": 104
+          },
+          "Sí": {
+            "RCP telefónica": 5,
+            "Sin telefónica": 18
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.49808429118773945,
+        "LCL95": 0.1757700684202579,
+        "UCL95": 1.4114346279642234,
+        "p_fisher": 0.24162048344144352,
+        "n_TCPR": 63,
+        "n_NoT": 122
+      },
+      "CPC_favorable": {
+        "tabla": {
+          "No": {
+            "RCP telefónica": 61,
+            "Sin telefónica": 108
+          },
+          "Sí": {
+            "RCP telefónica": 2,
+            "Sin telefónica": 14
+          }
+        },
+        "OR_TCPR_vs_NoT": 0.2529274004683841,
+        "LCL95": 0.05562263494273551,
+        "UCL95": 1.1501121795750042,
+        "p_fisher": 0.09436991486498422,
+        "n_TCPR": 63,
+        "n_NoT": 122
+      }
+    }
+  }
+}

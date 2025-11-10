@@ -341,7 +341,8 @@ def main():
     """Función principal"""
     
     # Cambiar al directorio de datos limpios
-    os.chdir("/Users/miguelrosa/Desktop/RCP Transtelefonica/data/3.cleaned_data")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(current_dir)
     
     try:
         # 1. Cargar datos procesados

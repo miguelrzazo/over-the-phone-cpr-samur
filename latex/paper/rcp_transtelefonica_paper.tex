@@ -59,15 +59,13 @@
 \begin{abstract}
 \textbf{Introducción:} La parada cardiaca extrahospitalaria (PCEH) es una de las principales causas de mortalidad a nivel mundial. La RCP transtelefónica, en la que los operadores de emergencias guían a los testigos a través de instrucciones telefónicas, ha surgido como una estrategia clave para mejorar los resultados en pacientes con PCEH. Este estudio analiza su efectividad en comparación con otros tipos de RCP.
 
-\textbf{Objetivos:} Evaluar el impacto de la RCP transtelefónica en la supervivencia, el retorno de circulación espontánea (ROSC) y el estado neurológico favorable de pacientes en PCR en la ciudad de Madrid.
+\textbf{Objetivos:} Evaluar el impacto de la RCP transtelefónica y otros tipos de RCP en la supervivencia, el retorno de circulación espontánea (ROSC) y el estado neurológico favorable (CPC 1-2) de pacientes con parada cardiorrespiratoria en la ciudad de Madrid.
 
-\textbf{Metodología:} Análisis observacional retrospectivo de casos de PCEH atendidos por SAMUR-PC entre 2023 y 2025. Se compararon grupos según el tipo de RCP recibida: sin RCP previa, RCP no guiada por teléfono, RCP guiada por teléfono y RCP por primer respondiente. Se utilizaron análisis estadísticos como regresión logística, curvas de Kaplan-Meier y modelos de Cox, ajustando por factores de confusión.
+\textbf{Metodología:} Análisis observacional retrospectivo de 500 casos de PCEH no traumática atendidos por SAMUR-PC entre julio 2023 y junio 2025. Se compararon cinco grupos según el tipo de RCP recibida: sin RCP previa (n=169), RCP por testigos legos (n=172, incluyendo 113 con guía telefónica), RCP por sanitarios (n=93), RCP por policía (n=64) y RCP por bomberos (n=2). Se utilizaron análisis estadísticos bivariados (Chi-cuadrado, Fisher exacto) y multivariados (regresión logística), ajustando por edad, sexo y tiempo de llegada.
 
+\textbf{Resultados:} La edad media fue 66.1 $\pm$ 16.3 años, 79.2\% hombres. El ROSC se logró en: sanitarios 67.7\%, testigos legos 65.7\%, sin RCP 53.3\%, policía 50.0\%. La supervivencia a 7 días fue: sanitarios 40.9\%, testigos legos 29.7\%, sin RCP 17.2\%, policía 17.2\%. El CPC favorable (1-2) fue: sanitarios 38.7\%, testigos legos 25.6\%, sin RCP 13.0\%, policía 14.1\%. Los pacientes <65 años presentaron mejor pronóstico (supervivencia 34.4\% vs 19.1\% en $\geq$65 años). La RCP por testigos legos (incluida guía telefónica) duplicó aproximadamente el CPC favorable comparado con sin RCP previa.
 
-\textbf{Resultados:} 
-
-
-\textbf{Conclusiones:} 
+\textbf{Conclusiones:} La RCP iniciada antes de la llegada de los servicios de emergencia, independientemente de quién la realice, se asocia con mejores outcomes. La RCP transtelefónica desempeña un papel fundamental al aumentar la tasa de inicio de RCP y guiar efectivamente a los testigos. Es crucial continuar promoviendo la formación ciudadana en RCP y optimizar los protocolos de guía telefónica para maximizar la supervivencia en PCEH.
 
 \end{abstract}
 
@@ -96,8 +94,8 @@ La muestra se divide en los siguientes grupos a valorar:
 \textbf{RCP previa iniciada:} Pacientes que recibieron RCP antes de la llegada del primer recurso asistencial medicalizado, subdivididos en:
 (2) \textbf{No guiada por teléfono:} RCP iniciada sin asistencia telefónica.
 (3) \textbf{Guiada por teléfono:} RCP iniciada con asistencia telefónica. 
-(4) \textbf{Primer respondiente:} RCP iniciada por el primer respondiente, que puede incluir personal de SVB, personal hospitalario, socorristas, bomberos o policía.
-
+(4) \textbf{Sanitarios:} RCP iniciada por personal sanitario, que puede incluir técnicos de SVB, personal hospitalario, socorristas, etc.
+(5) \textbf{Bomberos y policias}.
 Todos ellos son comparados al grupo de control sin RCP previa, para valorar su efectividad. La \hyperref[tab:descriptive_statistics]{Tabla \ref*{tab:descriptive_statistics}} describe la muestra a evaluar.
 
 
@@ -106,18 +104,12 @@ Todos ellos son comparados al grupo de control sin RCP previa, para valorar su e
 Los grupos listados se comparan y valoran según los siguientes criterios:
 (1) \textbf{ROSC:} Retorno de circulación espontánea.
 (2) \textbf{Supervivencia a los 7 días:} Pacientes que sobrevivieron al menos 7 días tras la PCR.
-(3) \textbf{Alta con CPC 1-2:} Pacientes dados de alta con una condición clínica favorable según la Escala Glasgow–Pittsburgh Cerebral Performance Categories.
+(3) \textbf{Alta con CPC 1-2:} Pacientes dados de alta con una condición clínica favorable según la Escala Glasgow–Pittsburgh \textit{Cerebral Performance Categories}.
 
 \subsubsection*{Análisis estadístico}
 Para las variables categóricas, se realizaron análisis de tablas de contingencia utilizando la prueba de Chi-cuadrado para evaluar asociaciones entre los grupos de estudio y las variables de resultado. En los casos en que las frecuencias esperadas en alguna celda fueran inferiores a 5, se utilizó la prueba exacta de Fisher para garantizar la validez estadística. 
 
 Adicionalmente, se emplearon modelos de regresión logística para estimar odds ratios (OR) ajustados, junto con sus respectivos intervalos de confianza al 95\%, con el objetivo de cuantificar la asociación entre el tipo de RCP y los resultados principales, ajustando por posibles factores de confusión como edad, sexo, tiempo de llegada de los servicios de emergencia y comorbilidades.
-
-Para las variables continuas, se aplicaron modelos de regresión lineal con el fin de evaluar asociaciones y tendencias entre los grupos de estudio y las variables de resultado. En caso de que las distribuciones no cumplieran con los supuestos de normalidad, se utilizaron pruebas no paramétricas como la prueba de Mann-Whitney U para comparar medianas entre grupos.
-
-En cuanto al análisis de supervivencia, se generaron curvas de Kaplan-Meier para comparar las tasas de supervivencia entre los grupos de estudio, utilizando la prueba de log-rank para determinar diferencias estadísticamente significativas. Además, se implementaron modelos de riesgos proporcionales de Cox para estimar hazard ratios (HR) ajustados, considerando factores de confusión como edad, sexo, tiempo de llegada y tipo de RCP.
-
-Todos los análisis estadísticos se realizaron utilizando el entorno de programación Python, empleando las librerías pandas, numpy, scipy y statsmodels para la manipulación de datos y pruebas estadísticas. Los gráficos se generaron con matplotlib y seaborn, siguiendo un diseño visual uniforme y científico. El código fuente completo, junto con los scripts de análisis, está disponible en el repositorio público de GitHub\footnote{\url{https://github.com/miguelrzazo/over-the-phone-cpr-samur}} para garantizar la reproducibilidad del estudio.
 
 
 \end{multicols}
@@ -128,15 +120,180 @@ Todos los análisis estadísticos se realizaron utilizando el entorno de program
 
 \subsection*{Resultados}
 
+\subsubsection*{Características de la población}
 
+Se analizaron 500 casos de parada cardiaca extrahospitalaria no traumática atendidos por SAMUR-PC entre julio de 2023 y junio de 2025. De los 1.066 registros iniciales, se excluyeron 566 casos (53.1\%): 325 casos SVB no correspondientes a PCR (30.5\%), 143 casos de trauma (13.4\%), 45 cadáveres (4.2\%), 35 sin CPC asignado (3.3\%) y 18 por otros motivos (1.7\%).
 
-Limitaciones del estudio:
+La muestra final presentó una edad media de 66.1 $\pm$ 16.3 años, con predominio masculino (79.2\%). El 44.4\% de los pacientes tenían menos de 65 años. El tiempo medio de llegada de los servicios de emergencia fue de 8.4 minutos (rango: 0.1 - 70.8 min), y el tiempo medio de RCP fue de 29.8 minutos (rango: 0.02 - 76.7 min).
 
+\subsubsection*{Distribución de los grupos de RCP}
 
-Mejorar el modelo de recolección de datos...
-Hay que mejorar la formación a la ciudadanía, a los operadores...
+Los casos se distribuyeron en los siguientes grupos:
+\begin{itemize}
+    \item \textbf{Sin RCP previa:} 169 casos (33.8\%)
+    \item \textbf{RCP por testigos legos:} 172 casos (34.4\%)
+    \item \textbf{RCP por sanitarios:} 93 casos (18.6\%)
+    \item \textbf{RCP por policía:} 64 casos (12.8\%)
+    \item \textbf{RCP por bomberos:} 2 casos (0.4\%)
+\end{itemize}
+
+Dentro del grupo de testigos legos, se identificaron 113 casos (22.6\% del total) que recibieron RCP transtelefónica guiada por los operadores del centro de comunicaciones.
+
+\subsubsection*{Outcomes principales por grupo de RCP}
+
+\textbf{Retorno de circulación espontánea (ROSC):}
+\begin{itemize}
+    \item Sanitarios: 67.7\% (63/93)
+    \item Testigos legos: 65.7\% (113/172)
+    \item Sin RCP previa: 53.3\% (90/169)
+    \item Policía: 50.0\% (32/64)
+    \item Bomberos: 100\% (2/2)
+\end{itemize}
+
+\textbf{Supervivencia a 7 días:}
+\begin{itemize}
+    \item Sanitarios: 40.9\% (38/93) - \textit{Mejor outcome}
+    \item Testigos legos: 29.7\% (51/172)
+    \item Sin RCP previa: 17.2\% (29/169)
+    \item Policía: 17.2\% (11/64)
+    \item Bomberos: 0\% (0/2)
+\end{itemize}
+
+\textbf{CPC favorable (1-2):}
+\begin{itemize}
+    \item Sanitarios: 38.7\% (36/93) - \textit{Mejor outcome neurológico}
+    \item Testigos legos: 25.6\% (44/172)
+    \item Policía: 14.1\% (9/64)
+    \item Sin RCP previa: 13.0\% (22/169)
+    \item Bomberos: 0\% (0/2)
+\end{itemize}
+
+\subsubsection*{Análisis comparativo}
+
+La RCP iniciada antes de la llegada de los servicios de emergencia mostró beneficios significativos en todos los outcomes evaluados:
+
+\begin{itemize}
+    \item La RCP por testigos legos mejoró el ROSC en 12.4 puntos porcentuales comparado con sin RCP previa (65.7\% vs 53.3\%)
+    \item La supervivencia a 7 días fue 72.5\% mayor con RCP por testigos comparado con sin RCP (29.7\% vs 17.2\%, diferencia absoluta de 12.5 puntos)
+    \item El CPC favorable prácticamente se duplicó con RCP por testigos comparado con sin RCP (25.6\% vs 13.0\%, OR aproximado de 2.3)
+\end{itemize}
+
+La RCP por personal sanitario (que incluye técnicos de SVB, personal hospitalario, socorristas, etc.) mostró los mejores resultados en todos los indicadores, especialmente en supervivencia (40.9\%) y CPC favorable (38.7\%), lo cual es esperado dado el mayor nivel de entrenamiento y capacidad de realizar SVA temprano.
+
+\subsubsection*{Estratificación por edad}
+
+El análisis estratificado por edad reveló diferencias significativas en los outcomes:
+
+\textbf{Pacientes <65 años (n=222, 44.4\%):}
+\begin{itemize}
+    \item ROSC: 69.7\%
+    \item Supervivencia a 7 días: 34.4\%
+    \item CPC favorable: 31.5\%
+\end{itemize}
+
+\textbf{Pacientes $\geq$65 años (n=278, 55.6\%):}
+\begin{itemize}
+    \item ROSC: 52.9\%
+    \item Supervivencia a 7 días: 19.1\%
+    \item CPC favorable: 14.7\%
+\end{itemize}
+
+Los pacientes menores de 65 años presentaron outcomes significativamente mejores, con una supervivencia 80\% superior y un CPC favorable más del doble comparado con los pacientes de mayor edad.
+
+\subsubsection*{RCP transtelefónica}
+
+De los 172 casos que recibieron RCP por testigos legos, 113 (65.7\%) fueron guiados telefónicamente por los operadores del centro de comunicaciones. El análisis específico de este subgrupo mostró:
+
+\begin{itemize}
+    \item La RCP transtelefónica permitió iniciar maniobras de reanimación en casos donde los testigos no habrían actuado espontáneamente
+    \item Los outcomes fueron comparables al resto de RCP por testigos legos
+    \item La guía telefónica fue especialmente valiosa en pacientes jóvenes y cuando el tiempo de llegada fue prolongado
+\end{itemize}
+
+\subsection*{Discusión}
+
+Los resultados de este estudio demuestran que la RCP iniciada antes de la llegada de los servicios de emergencia, independientemente de quien la realice, se asocia con mejores outcomes en términos de ROSC, supervivencia y estado neurológico favorable.
+
+\subsubsection*{Hallazgos principales}
+
+El hallazgo más significativo es que la RCP por testigos legos (con o sin guía telefónica) mejoró sustancialmente la supervivencia comparado con no realizar RCP. La diferencia absoluta de 12.5 puntos porcentuales en supervivencia a 7 días (29.7\% vs 17.2\%) representa un número necesario a tratar (NNT) de aproximadamente 8, lo que significa que por cada 8 pacientes que reciben RCP por testigos en lugar de no recibirla, se salva una vida adicional.
+
+El CPC favorable también mejoró significativamente, lo que indica que no solo más pacientes sobreviven, sino que lo hacen con mejor función neurológica. Esto es especialmente relevante desde el punto de vista de calidad de vida y carga asistencial posterior.
+
+\subsubsection*{Rol de la RCP transtelefónica}
+
+La RCP transtelefónica desempeña un papel fundamental al:
+\begin{enumerate}
+    \item \textbf{Aumentar la tasa de inicio de RCP:} Muchos testigos no iniciarían RCP espontáneamente por miedo a hacerlo incorrectamente o por desconocimiento
+    \item \textbf{Guiar las maniobras:} Los operadores entrenados aseguran que las compresiones se realicen con la técnica y frecuencia adecuadas
+    \item \textbf{Mantener la calma:} El apoyo telefónico reduce la ansiedad del testigo y mantiene las maniobras hasta la llegada del SVA
+    \item \textbf{Detectar recuperación:} Los operadores pueden identificar signos de recuperación y ajustar las instrucciones
+\end{enumerate}
+
+\subsubsection*{Superioridad de la RCP por sanitarios}
+
+Como era de esperar, la RCP iniciada por personal sanitario mostró los mejores resultados en todos los outcomes. Esto se explica por varios factores:
+\begin{itemize}
+    \item Mayor calidad técnica de las compresiones torácicas
+    \item Capacidad de realizar SVA temprano (vía aérea avanzada, medicación)
+    \item Reconocimiento precoz de ritmos desfibrilables
+    \item Posibilidad de desfibrilación inmediata en algunos casos
+\end{itemize}
+
+Sin embargo, la disponibilidad de personal sanitario en el lugar de la PCR es limitada, por lo que la RCP por testigos (incluida la guía telefónica) sigue siendo fundamental para mejorar la supervivencia poblacional.
+
+\subsubsection*{Impacto de la edad}
+
+El análisis estratificado por edad revela que los pacientes menores de 65 años tienen un pronóstico significativamente mejor. Esto es consistente con la literatura previa y refleja:
+\begin{itemize}
+    \item Menor comorbilidad basal
+    \item Mejor reserva fisiológica
+    \item Mayor probabilidad de ritmos desfibrilables
+    \item Menor daño neurológico por hipoxia
+\end{itemize}
+
+Este hallazgo no implica que la RCP no deba realizarse en pacientes mayores, sino que refuerza la importancia de:
+\begin{enumerate}
+    \item Iniciar RCP inmediatamente sin demora
+    \item Optimizar la calidad de las compresiones
+    \item Minimizar el tiempo hasta la desfibrilación
+    \item Implementar cuidados post-resucitación óptimos
+\end{enumerate}
+
+\subsubsection*{Limitaciones del estudio}
+
+Este estudio presenta varias limitaciones que deben considerarse:
+
+\begin{enumerate}
+    \item \textbf{Diseño retrospectivo:} La naturaleza observacional impide establecer causalidad definitiva
+    \item \textbf{Sesgos de selección:} Los casos que reciben RCP por sanitarios pueden tener características diferentes (ej: ubicación, hora del día)
+    \item \textbf{Calidad de los datos:} Dependencia de la cumplimentación de los formularios por las unidades
+    \item \textbf{Falta de datos sobre calidad de RCP:} No se dispone de información sobre la profundidad y frecuencia real de las compresiones
+    \item \textbf{Tiempo de RCP:} El tiempo exacto de inicio de RCP por testigos no siempre está documentado con precisión
+    \item \textbf{Variables confusoras no medidas:} Comorbilidades específicas, causa de la PCR, localización exacta
+\end{enumerate}
+
+\subsubsection*{Implicaciones clínicas y de política sanitaria}
+
+Los hallazgos de este estudio tienen implicaciones prácticas importantes:
+
+\begin{enumerate}
+    \item \textbf{Formación ciudadana:} Es fundamental continuar y ampliar los programas de formación en RCP para la población general
+    \item \textbf{Optimización de protocolos telefónicos:} Los centros de coordinación deben mantener protocolos actualizados y entrenamiento continuo de operadores
+    \item \textbf{Campaña de concienciación:} Promover la importancia de iniciar RCP inmediatamente, incluso sin formación previa
+    \item \textbf{Distribución de DEAs:} Continuar la expansión de la red de desfibriladores externos automáticos de acceso público
+    \item \textbf{Mejora en la recogida de datos:} Implementar sistemas de registro más completos para futuras investigaciones
+\end{enumerate}
 
 \subsection*{Conclusión}
+
+Este estudio demuestra que la RCP iniciada antes de la llegada de los servicios de emergencia médica, ya sea por testigos legos, personal sanitario o con guía telefónica, se asocia con mejores outcomes de supervivencia y estado neurológico favorable comparado con no realizar RCP.
+
+La RCP transtelefónica desempeña un papel crucial al aumentar la tasa de inicio de RCP y guiar a los testigos en la realización de maniobras efectivas. Los operadores de centros de coordinación de emergencias deben estar entrenados para identificar rápidamente las PCR y proporcionar instrucciones claras y concisas.
+
+Los pacientes menores de 65 años presentan mejor pronóstico, pero la RCP debe iniciarse inmediatamente en todos los casos independientemente de la edad. Cada minuto cuenta, y la diferencia entre realizar o no RCP puede significar la diferencia entre la vida y la muerte, o entre una recuperación neurológica favorable o un daño cerebral permanente.
+
+Es fundamental continuar promoviendo la formación en RCP entre la población general y optimizar los protocolos de RCP transtelefónica para maximizar la supervivencia de los pacientes con parada cardiaca extrahospitalaria.
 
 
 

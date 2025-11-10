@@ -1,41 +1,176 @@
-# Informes de anomalías de limpieza de datos
-data/2.Data_cleaning/informe_anomalias.md
-data/2.Data_cleaning/informe_anomalias_anotado.md
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.venv
-venv/
+# =========================================
+# Proyecto RCP Transtelefónica - .gitignore
+# =========================================
 
-# Debug files
-debug_case.py
-verificar_merge.py
-
-# Jupyter
-.ipynb_checkpoints/
-
-# System files
-.DS_Store
-*/.DS_Store
-
-# Data files (but allow scripts)
-# Raw data
+# ================
+# DATOS SENSIBLES
+# ================
+# Datos originales - NUNCA subir (protección de datos)
 data/1.raw_imported/*.csv
 data/1.raw_imported/*.xlsx
 data/1.raw_imported/*.xls
 
-# Cleaned data and reports
+# Datos limpios - Pueden contener información sensible
+data/3.cleaned_data/*.csv
+data/3.cleaned_data/*.xlsx
+
+# Reportes de limpieza que pueden contener información sensible
 data/2.Data_cleaning/*.csv
 data/2.Data_cleaning/*reporte*.txt
-data/3.cleaned_data/*.csv
+data/2.Data_cleaning/informe_anomalias.md
+data/2.Data_cleaning/informe_anomalias_anotado.md
 
-# Allow Python scripts in data cleaning
+# EXCEPCIÓN: Permitir scripts de procesamiento
 !data/2.Data_cleaning/*.py
+!data/3.cleaned_data/*.py
+!data/3.cleaned_data/*.md
 
-# Documentation files to ignore
-*.xlsx
+# ================
+# PYTHON
+# ================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ================
+# JUPYTER NOTEBOOKS
+# ================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter local config
+.jupyter/
+
+# ================
+# LATEX
+# ================
+# Archivos auxiliares de LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# Solo en latex/paper/
+latex/paper/*.pdf
+latex/paper/*.aux
+latex/paper/*.log
+latex/paper/*.out
+
+# EXCEPCIÓN: Permitir PDFs en otros directorios
+!Poster/*.pdf
+!documentation/*.pdf
+
+# ================
+# OUTPUTS INTERMEDIOS
+# ================
+# Outputs de notebooks que ya están en latex/
+final_noteboooks/outputs_descriptivos/figures/*.png
+final_noteboooks/outputs_descriptivos/tables/*.csv
+final_noteboooks/outputs_inferencia/figures/*.png
+final_noteboooks/outputs_inferencia/tables/*.csv
+
+# Modelos de ML temporales
+final_noteboooks/outputs_inferencia/models/*.pkl
+final_noteboooks/outputs_inferencia/models/*.joblib
+
+# ================
+# ARCHIVOS DEL SISTEMA
+# ================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ================
+# IDEs y EDITORES
+# ================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ================
+# ARCHIVOS DE TRABAJO
+# ================
+# Scripts de debug temporales
+debug_*.py
+test_*.py
+verificar_*.py
+
+# Notas y tareas temporales
+TODO.md
+NOTES.md
 Tasks.md
-reunion 24.7.25.md
+reunion*.md
+
+# Archivos temporales de Office
+~$*.xlsx
+~$*.docx
+*.tmp
+
+# ================
+# BACKUPS
+# ================
+# Notebooks backup
+*_backup.ipynb
+*_old.ipynb
+*_simplified.ipynb
+final_noteboooks/3.exploratory_analysis_backup.ipynb
+final_noteboooks/3.exploratory_analysis_simplified.ipynb
+
+# Archivos backup generales
+*.bak
+*.backup
+*~
+
+# ================
+# LOGS Y REPORTES TEMPORALES
+# ================
+*.log
+logs/
+*.log.*
