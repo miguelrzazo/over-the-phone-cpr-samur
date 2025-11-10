@@ -1,0 +1,56 @@
+{
+  "ROSC": {
+    "tabla": {
+      "No": {
+        "RCP telefónica": 44,
+        "Sin telefónica": 77
+      },
+      "Sí": {
+        "RCP telefónica": 67,
+        "Sin telefónica": 144
+      }
+    },
+    "OR_TCPR_vs_NoT": 0.8142361111111112,
+    "LCL95": 0.5087289208934359,
+    "UCL95": 1.3032096611944362,
+    "p_fisher": 0.40001255650565226,
+    "n_TCPR": 111,
+    "n_NoT": 221
+  },
+  "Supervivencia": {
+    "tabla": {
+      "No": {
+        "RCP telefónica": 80,
+        "Sin telefónica": 153
+      },
+      "Sí": {
+        "RCP telefónica": 33,
+        "Sin telefónica": 68
+      }
+    },
+    "OR_TCPR_vs_NoT": 0.928125,
+    "LCL95": 0.5651818488118384,
+    "UCL95": 1.5241395622239533,
+    "p_fisher": 0.8022281080316773,
+    "n_TCPR": 113,
+    "n_NoT": 221
+  },
+  "CPC_favorable": {
+    "tabla": {
+      "No": {
+        "RCP telefónica": 87,
+        "Sin telefónica": 158
+      },
+      "Sí": {
+        "RCP telefónica": 26,
+        "Sin telefónica": 63
+      }
+    },
+    "OR_TCPR_vs_NoT": 0.749498266739646,
+    "LCL95": 0.44270532407053637,
+    "UCL95": 1.2688974387762957,
+    "p_fisher": 0.29847237888560174,
+    "n_TCPR": 113,
+    "n_NoT": 221
+  }
+}

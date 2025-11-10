@@ -1,0 +1,122 @@
+{
+  "ROSC_bin": {
+    "\u226565 a\u00f1os": {
+      "OR": 0.7827956989247312,
+      "IC_95": [
+        0.4006793049391181,
+        1.529325569605265
+      ],
+      "p_valor": 0.5845359865207731,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 31,
+          "Sin RCP previa": 42
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 26,
+          "Sin RCP previa": 45
+        }
+      }
+    },
+    "<65 a\u00f1os": {
+      "OR": 2.5384615384615383,
+      "IC_95": [
+        1.1393517979131615,
+        5.655660520351107
+      ],
+      "p_valor": 0.03426400773486913,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 12,
+          "Sin RCP previa": 33
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 36,
+          "Sin RCP previa": 39
+        }
+      }
+    }
+  },
+  "supervivencia_bin": {
+    "\u226565 a\u00f1os": {
+      "OR": 1.2468944099378882,
+      "IC_95": [
+        0.5215270123754562,
+        2.98114121156023
+      ],
+      "p_valor": 0.7857707487100192,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 46,
+          "Sin RCP previa": 73
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 11,
+          "Sin RCP previa": 14
+        }
+      }
+    },
+    "<65 a\u00f1os": {
+      "OR": 3.888888888888889,
+      "IC_95": [
+        1.6751112277390003,
+        9.028329904120167
+      ],
+      "p_valor": 0.002315760556696038,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 27,
+          "Sin RCP previa": 60
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 21,
+          "Sin RCP previa": 12
+        }
+      }
+    }
+  },
+  "cpc_favorable_bin": {
+    "\u226565 a\u00f1os": {
+      "OR": 1.625,
+      "IC_95": [
+        0.602937107616808,
+        4.379602725792471
+      ],
+      "p_valor": 0.4786469623589884,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 48,
+          "Sin RCP previa": 78
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 9,
+          "Sin RCP previa": 9
+        }
+      }
+    },
+    "<65 a\u00f1os": {
+      "OR": 3.0410557184750733,
+      "IC_95": [
+        1.2702505973572666,
+        7.28046883198503
+      ],
+      "p_valor": 0.01954312371129608,
+      "test": "Chi-cuadrado",
+      "tabla": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 31,
+          "Sin RCP previa": 61
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 17,
+          "Sin RCP previa": 11
+        }
+      }
+    }
+  }
+}

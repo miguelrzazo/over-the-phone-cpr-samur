@@ -1,0 +1,161 @@
+{
+  "ROSC_bin": [
+    {
+      "Grupo": "RCP por primeros respondientes",
+      "OR": 1.4854780580877676,
+      "IC_95_inferior": 0.9417051618743297,
+      "IC_95_superior": 2.3432440963456047,
+      "p_valor": 0.10616178712753613,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por primeros respondientes": 53,
+          "Sin RCP previa": 77
+        },
+        "1": {
+          "RCP por primeros respondientes": 91,
+          "Sin RCP previa": 89
+        }
+      }
+    },
+    {
+      "Grupo": "RCP Transtelef\u00f3nica",
+      "OR": 1.2601367855398145,
+      "IC_95_inferior": 0.7769204559053791,
+      "IC_95_superior": 2.0438961366001305,
+      "p_valor": 0.39050371580200893,
+      "Tabla_2x2": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 46,
+          "Sin RCP previa": 77
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 67,
+          "Sin RCP previa": 89
+        }
+      }
+    },
+    {
+      "Grupo": "RCP por testigos legos",
+      "OR": 1.9105805243445693,
+      "IC_95_inferior": 1.0798146059164684,
+      "IC_95_superior": 3.380504319912068,
+      "p_valor": 0.02615189540034047,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por testigos legos": 24,
+          "Sin RCP previa": 77
+        },
+        "1": {
+          "RCP por testigos legos": 53,
+          "Sin RCP previa": 89
+        }
+      }
+    }
+  ],
+  "supervivencia_bin": [
+    {
+      "Grupo": "RCP por primeros respondientes",
+      "OR": 2.313411078717201,
+      "IC_95_inferior": 1.3529658072741677,
+      "IC_95_superior": 3.955658591190819,
+      "p_valor": 0.0021325707438372347,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por primeros respondientes": 98,
+          "Sin RCP previa": 138
+        },
+        "1": {
+          "RCP por primeros respondientes": 46,
+          "Sin RCP previa": 28
+        }
+      }
+    },
+    {
+      "Grupo": "RCP Transtelef\u00f3nica",
+      "OR": 2.0330357142857145,
+      "IC_95_inferior": 1.1451498484260738,
+      "IC_95_superior": 3.609339180581528,
+      "p_valor": 0.018072630731409668,
+      "Tabla_2x2": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 80,
+          "Sin RCP previa": 138
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 33,
+          "Sin RCP previa": 28
+        }
+      }
+    },
+    {
+      "Grupo": "RCP por testigos legos",
+      "OR": 1.9714285714285715,
+      "IC_95_inferior": 1.0395980237511369,
+      "IC_95_superior": 3.738493651826402,
+      "p_valor": 0.041484717084881766,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por testigos legos": 55,
+          "Sin RCP previa": 138
+        },
+        "1": {
+          "RCP por testigos legos": 22,
+          "Sin RCP previa": 28
+        }
+      }
+    }
+  ],
+  "cpc_favorable_bin": [
+    {
+      "Grupo": "RCP por primeros respondientes",
+      "OR": 2.7866786678667865,
+      "IC_95_inferior": 1.570748053415516,
+      "IC_95_superior": 4.943872431392122,
+      "p_valor": 0.0004294930194458634,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por primeros respondientes": 101,
+          "Sin RCP previa": 144
+        },
+        "1": {
+          "RCP por primeros respondientes": 43,
+          "Sin RCP previa": 22
+        }
+      }
+    },
+    {
+      "Grupo": "RCP Transtelef\u00f3nica",
+      "OR": 1.9561128526645768,
+      "IC_95_inferior": 1.044875524850742,
+      "IC_95_superior": 3.6620414598247364,
+      "p_valor": 0.03700848784802242,
+      "Tabla_2x2": {
+        "0": {
+          "RCP Transtelef\u00f3nica": 87,
+          "Sin RCP previa": 144
+        },
+        "1": {
+          "RCP Transtelef\u00f3nica": 26,
+          "Sin RCP previa": 22
+        }
+      }
+    },
+    {
+      "Grupo": "RCP por testigos legos",
+      "OR": 2.2966507177033493,
+      "IC_95_inferior": 1.1649167604248414,
+      "IC_95_superior": 4.527881045512366,
+      "p_valor": 0.018098636192766845,
+      "Tabla_2x2": {
+        "0": {
+          "RCP por testigos legos": 57,
+          "Sin RCP previa": 144
+        },
+        "1": {
+          "RCP por testigos legos": 20,
+          "Sin RCP previa": 22
+        }
+      }
+    }
+  ]
+}

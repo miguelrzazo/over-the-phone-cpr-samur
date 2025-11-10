@@ -1,0 +1,167 @@
+{
+  "ROSC": {
+    "contingencia": {
+      "No": {
+        "Sin RCP": 76,
+        "RCP legos sin telefónica": 24,
+        "RCP telefónica": 44,
+        "RCP sanitarios": 24,
+        "RCP policía/bomberos": 29
+      },
+      "Sí": {
+        "Sin RCP": 89,
+        "RCP legos sin telefónica": 53,
+        "RCP telefónica": 67,
+        "RCP sanitarios": 62,
+        "RCP policía/bomberos": 29
+      }
+    },
+    "test": {
+      "test": "Chi2",
+      "chi2": 12.702267852456611,
+      "p_value": 0.012826020124394027
+    },
+    "or_vs_ref": [
+      {
+        "grupo_rcp": "Sin RCP",
+        "OR": 1.0,
+        "LCL95": 1.0,
+        "UCL95": 1.0
+      },
+      {
+        "grupo_rcp": "RCP legos sin telefónica",
+        "OR": 1.8857677902621723,
+        "LCL95": 1.0651784621197173,
+        "UCL95": 3.338520525202468
+      },
+      {
+        "grupo_rcp": "RCP telefónica",
+        "OR": 1.300306435137896,
+        "LCL95": 0.7980220340355393,
+        "UCL95": 2.1187345125181403
+      },
+      {
+        "grupo_rcp": "RCP sanitarios",
+        "OR": 2.2059925093632957,
+        "LCL95": 1.257682346750407,
+        "UCL95": 3.8693418603996124
+      },
+      {
+        "grupo_rcp": "RCP policía/bomberos",
+        "OR": 0.8539325842696629,
+        "LCL95": 0.46917641709364866,
+        "UCL95": 1.55421464487614
+      }
+    ]
+  },
+  "Supervivencia": {
+    "contingencia": {
+      "No": {
+        "Sin RCP": 137,
+        "RCP legos sin telefónica": 55,
+        "RCP telefónica": 80,
+        "RCP sanitarios": 49,
+        "RCP policía/bomberos": 49
+      },
+      "Sí": {
+        "Sin RCP": 28,
+        "RCP legos sin telefónica": 22,
+        "RCP telefónica": 33,
+        "RCP sanitarios": 37,
+        "RCP policía/bomberos": 9
+      }
+    },
+    "test": {
+      "test": "Chi2",
+      "chi2": 24.21072541652212,
+      "p_value": 7.246975940464695e-05
+    },
+    "or_vs_ref": [
+      {
+        "grupo_rcp": "Sin RCP",
+        "OR": 1.0,
+        "LCL95": 1.0,
+        "UCL95": 1.0
+      },
+      {
+        "grupo_rcp": "RCP legos sin telefónica",
+        "OR": 1.957142857142857,
+        "LCL95": 1.0319008826458758,
+        "UCL95": 3.711992331515248
+      },
+      {
+        "grupo_rcp": "RCP telefónica",
+        "OR": 2.0183035714285715,
+        "LCL95": 1.1366504865344327,
+        "UCL95": 3.5838187329345996
+      },
+      {
+        "grupo_rcp": "RCP sanitarios",
+        "OR": 3.694606413994169,
+        "LCL95": 2.049119008970888,
+        "UCL95": 6.661456213410578
+      },
+      {
+        "grupo_rcp": "RCP policía/bomberos",
+        "OR": 0.8986880466472303,
+        "LCL95": 0.39627336697928806,
+        "UCL95": 2.038088533032368
+      }
+    ]
+  },
+  "CPC_favorable": {
+    "contingencia": {
+      "No": {
+        "Sin RCP": 144,
+        "RCP legos sin telefónica": 57,
+        "RCP telefónica": 87,
+        "RCP sanitarios": 51,
+        "RCP policía/bomberos": 50
+      },
+      "Sí": {
+        "Sin RCP": 22,
+        "RCP legos sin telefónica": 20,
+        "RCP telefónica": 26,
+        "RCP sanitarios": 35,
+        "RCP policía/bomberos": 8
+      }
+    },
+    "test": {
+      "test": "Chi2",
+      "chi2": 27.78204134380748,
+      "p_value": 1.380800198201668e-05
+    },
+    "or_vs_ref": [
+      {
+        "grupo_rcp": "Sin RCP",
+        "OR": 1.0,
+        "LCL95": 1.0,
+        "UCL95": 1.0
+      },
+      {
+        "grupo_rcp": "RCP legos sin telefónica",
+        "OR": 2.2966507177033493,
+        "LCL95": 1.1649167604248414,
+        "UCL95": 4.527881045512366
+      },
+      {
+        "grupo_rcp": "RCP telefónica",
+        "OR": 1.9561128526645768,
+        "LCL95": 1.044875524850742,
+        "UCL95": 3.6620414598247364
+      },
+      {
+        "grupo_rcp": "RCP sanitarios",
+        "OR": 4.491978609625669,
+        "LCL95": 2.4125816193749987,
+        "UCL95": 8.363601739849868
+      },
+      {
+        "grupo_rcp": "RCP policía/bomberos",
+        "OR": 1.0472727272727274,
+        "LCL95": 0.43839677605496175,
+        "UCL95": 2.5017979720538666
+      }
+    ]
+  }
+}

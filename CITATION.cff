@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Si utilizas este software, código o metodología, por favor cítalo como se indica a continuación."
+type: software
+title: "Efectividad de la RCP Transtelefónica en Paradas Cardíacas Extrahospitalarias: Análisis SAMUR-PC 2023-2025"
+version: 1.0.0
+date-released: 2025-11-10
+url: "https://github.com/miguelrzazo/over-the-phone-cpr-samur"
+repository-code: "https://github.com/miguelrzazo/over-the-phone-cpr-samur"
+license: MIT
+authors:
+  - family-names: "Muñoz Condés"
+    given-names: "María del Rosario"
+    affiliation: "SAMUR-PC, Madrid, España"
+    orcid: ""
+  - family-names: "Rosa Zazo"
+    given-names: "Miguel"
+    affiliation: "SAMUR-PC, Madrid, España"
+    orcid: ""
+  - family-names: "Córcoba Fernández"
+    given-names: "Óscar"
+    affiliation: "SAMUR-PC, Madrid, España"
+    orcid: ""
+keywords:
+  - "parada cardíaca extrahospitalaria"
+  - "RCP transtelefónica"
+  - "ROSC"
+  - "supervivencia"
+  - "servicios de emergencias médicas"
+  - "SAMUR-PC"
+  - "análisis observacional"
+  - "estadística médica"
+abstract: >
+  Este repositorio contiene todo el código, análisis estadístico y documentación
+  del estudio sobre la efectividad de la Reanimación Cardiopulmonar (RCP) guiada
+  telefónicamente por el servicio de emergencias SAMUR-PC de Madrid. El estudio
+  retrospectivo observacional analiza 500 casos de parada cardiaca extrahospitalaria
+  no traumática durante 24 meses (julio 2023 - junio 2025), evaluando el impacto
+  de la RCP transtelefónica en el retorno de circulación espontánea (ROSC),
+  supervivencia a 7 días y estado neurológico favorable (CPC 1-2).
